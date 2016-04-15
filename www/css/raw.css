@@ -1,0 +1,242 @@
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+html {
+	font-size:100%;
+	height:100%;
+}
+body { 
+	font-size:13px; 
+	font-family: 'Arimo', sans-serif;
+	height:100%;
+	width:100%;
+	background:--lightest--;
+	overflow:hidden;
+}
+#top_section {
+	height:90%;
+	width:100%;
+	position:relative;
+}
+#left_col {
+	width:15%;
+	height:100%;
+	position:relative;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+	background:--dark--;
+	color:--text--;
+}
+#center_col {
+	width:85%;
+	height:100%;
+	position:absolute;
+	left:15%;
+	top:0px;
+}
+#bottom_section {
+	height:10%;
+	width:100%;
+	background:--darkest--;
+	border-top:1px solid --dark--;
+	padding:10px;
+}
+#bottom_section textarea {
+	width:100%;
+	border:0px;
+	height:2.25em;
+	border-radius:.5em;
+	font-size:1.25em;
+	color:--darkest--;
+	outline:0px;
+	padding:.5em;
+	resize:none;
+	font-family: 'Arimo', sans-serif;
+}
+#top_row {
+	height:10%;
+	width:100%;
+	font-size:1.8em;
+	font-weight:bold;
+	padding:0px .25em 0px 1em;
+}
+#chat {
+	width:100%;
+	height:90%;
+	overflow:auto;
+}
+.scrollable {
+	width:100%;
+	overflow:auto;
+}
+#location_info {
+	padding:.25em;
+	background:--darkest--;
+}
+#location_name {
+	font-size:1.25em;
+	font-weight:bold;
+	color:--lightest--;
+}
+#location_users {
+	font-style:italic;
+	color:--accent-d--;
+	cursor:hand;
+	cursor:pointer;
+}
+#location_users:hover {
+	color:--lightest--;
+}
+#user_info {
+	padding:.25em;
+	border-bottom:1px solid --darkest--;
+}
+#user_image {
+	width:40px;
+	height:40px;
+	border-radius:1em 0em 1em 0em;
+	display:inline;
+	margin-right:.25em;
+}
+#user_name_wrapper {
+	display:inline-block;
+	vertical-align:super;
+}
+#user_name {
+	font-weight:bold;
+	font-size:1.1em;
+}
+#update_username {
+	cursor:hand;
+	cursor:pointer;
+	font-size:.95em;
+	color:--accent-d--;
+}
+#update_username:hover {
+	color:--lightest--;
+}
+#channel_header_wrapper {
+	padding:.25em;
+}
+#channel_header {
+	font-weight:bold;	
+	font-size:1.1em;	
+}
+#add_channel {
+	float:right;
+	cursor:hand;
+	cursor:pointer;
+	margin-right:1em;
+	color:--accent-d--;
+}
+#add_channel:hover {
+	color:--lightest--;
+}
+#channel_list {
+	text-transform:uppercase;
+	font-size:.95em;
+	border-bottom:1px solid --darkest--;
+}
+#channel_list li {
+	list-style-type:none;
+	padding:.25em .25em .25em 1em;
+	cursor:hand;
+	cursor:pointer;
+}
+#channel_list li:hover {
+	background:--darkest--;
+	color:--accent-d--;
+}
+#friends_header {
+	padding:.25em;
+	font-weight:bold;
+	font-size:1.1em;
+}
+#friend_list {
+	font-size:.95em;
+}
+#friend_list li {
+	list-style-type:none;
+	padding:.25em .25em .25em 1em;
+	cursor:hand;
+	cursor:pointer;
+}
+#friend_list li:hover {
+	background:--darkest--;
+	color:--accent-d--;
+}
+.has_messages {
+	font-weight:bold;
+	color:--accent-d--;
+}
+#chat > div > div {
+	padding:.25em .1em .25em 1em;
+	display:none;
+}
+#chat li {
+	list-style-type:none;
+	clear:both;
+	padding:.5em 0px;
+}
+.sender_img {
+	width:40px;
+	height:40px;
+	border-radius:1em 0em 1em 0em;
+	float:left;
+}
+.sender_wrap {
+	margin-left:50px;
+}
+.sender_name {
+	font-size:1.25em;
+	font-weight:bold;
+	color:--dark--
+}
+.send_time {
+	font-size:.8em;
+	margin-left:.25em;
+	color:--accent-l--;
+}
+
+#right_col {
+	width:0%;
+	height:100%;
+	display:none;
+	border-left:1px solid --darkest--;
+	position:absolute;
+	top:0px;
+	right:0px;
+	text-align:right;
+}
+
+#users_header {
+	display:none;
+	padding:.25em;
+	font-weight:bold;	
+}
+#users_close {
+	float:left;
+	cursor:hand;
+	cursor:pointer;
+}
+#users_close:hover {
+	color:--accent-l--;
+}
+#users_list {
+	display:none;
+	font-size:.95em;
+}
+#users_list li {
+	list-style-type: none;
+	padding:.25em .25em .25em 1em;
+	cursor:hand;
+	cursor:pointer;
+}
+#users_list li:hover {
+	background:--dark--;
+	color:--accent-d--;
+}
